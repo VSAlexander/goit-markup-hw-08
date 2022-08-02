@@ -1,0 +1,22 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--theme--darker {
+    background-color: #f5f4fa;
+  }
+
+  &--no--padding--top {
+    display: none;
+    padding-top: 0;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+}

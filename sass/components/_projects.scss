@@ -1,0 +1,40 @@
+.projects-list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @media (max-width: 767px) {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 30px) / 2);
+
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+
+      &:not(:nth-child(n + 9)) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
+      }
+
+      &:not(:nth-child(n + 7)) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
